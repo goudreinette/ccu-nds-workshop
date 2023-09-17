@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build demo1",
+            "type": "shell",
+            "command": "make -C demos/demo1",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Launch demo1",
+            "type": "shell",
+            "command": "desmume demos/demo1/demo1.nds",
+            "group": {
+                "kind": "test",
+                "dependsOrder": "sequence",
+                "dependsOn": "Build demo1"
+            }
+        },
+        {
+            "label": "Build demo2",
+            "type": "shell",
+            "command": "make -C demos/demo2",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Launch demo2",
+            "type": "shell",
+            "command": "desmume demos/demo2/demo2.nds",
+            "group": {
+                "kind": "test",
+                "dependsOrder": "sequence",
+                "dependsOn": "Build demo2"
+            }
+        }
+    ]
+}
