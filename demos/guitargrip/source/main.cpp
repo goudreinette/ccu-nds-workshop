@@ -5,14 +5,6 @@
 #include <filesystem.h>
 #include <nf_lib.h>
 #include <nds.h>
-#include <stdio.h> // NOLINT(modernize-deprecated-headers)
-#include <string>
-#include <vector>
-#include <filesystem.h>
-#include <nf_lib.h>
-
-// create an enum with strings for the colors
-
 
 
 int main(int argc, char **argv)

@@ -21,7 +21,6 @@ int main(int argc, char **argv)
     nitroFSInit(nullptr);
     NF_SetRootFolder("NITROFS");
 
-
     NF_InitTiledBgBuffers();
     NF_InitTiledBgSys(0);
 
@@ -42,9 +41,6 @@ int main(int argc, char **argv)
         scanKeys();
         u16 keys = guitarGripKeysDown();
         u16 buttons = keysDown();
-
-
-
 
         if (keys & GUITARGRIP_GREEN || buttons & KEY_UP) {
             NF_CreateTiledBg(0, 0, "green");
