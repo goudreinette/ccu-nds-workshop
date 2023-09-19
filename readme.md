@@ -6,8 +6,8 @@
 
 ## Prerequisites
 
-- [devkitPro](https://devkitpro.org/wiki/Getting_Started) with 
-- [Aseprite](https://www.aseprite.org/)
+- [devkitPro](https://devkitpro.org/wiki/Getting_Started) with `nds-dev` package installed
+- [Aseprite](https://www.aseprite.org/) to edit sprites and backgrounds
 - [DeSmuME](https://desmume.org/) or another NDS emulator
 
 

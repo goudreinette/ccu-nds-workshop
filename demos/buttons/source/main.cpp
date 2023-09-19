@@ -147,7 +147,6 @@ int main(int argc, char **argv)
 
     consoleDemoInit();
     printf("\n Loading buttons demo... \n\n");
-    swiWaitForVBlank();
 
     // Initialize NitroFS and set it as the root folder of the filesystem
     nitroFSInit(nullptr);
