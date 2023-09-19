@@ -1,11 +1,12 @@
 #!/bin/sh
 
-grit_args="-ftb -fh! -gTFF00FF -gt -gB8 -mR8 -mLs"
 
-
-# Backgrounds
 for background in assets/*.png; do
-    grit $background $grit_args
+    grit $background -ftb -fh! -gT000000 -gt -gB8 -mR8 -mLs
+done
+
+for sprite in assets/sprites/*.png; do
+    grit $sprite -ftb -fh! -gT000000 -gt -gB8 -m!
 done
 
 for file in *.bin; do

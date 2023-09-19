@@ -1,7 +1,6 @@
 #!/bin/sh
 
 
-# Backgrounds
 for background in assets/*.png; do
     grit $background -ftb -fh! -gT000000 -gt -gB8 -mR8 -mLs
 done

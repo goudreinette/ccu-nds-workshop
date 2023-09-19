@@ -6,10 +6,9 @@
 
 ## Prerequisites
 
-- [devkitPro](https://devkitpro.org/wiki/Getting_Started)
+- [devkitPro](https://devkitpro.org/wiki/Getting_Started) with 
 - [Aseprite](https://www.aseprite.org/)
-- [Desmume](https://desmume.org/)
-    - Mac: `brew install --cask desmume`
+- [DeSmuME](https://desmume.org/) or another NDS emulator
 
 
 
@@ -17,7 +16,7 @@
 
 
 
-## Building a program
+### Building a program
 Go to the folder of the program you want to build.
 
 ```bash
