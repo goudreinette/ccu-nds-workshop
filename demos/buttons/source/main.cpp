@@ -63,7 +63,6 @@ ButtonSprite buttonSprites[] = {
         height: 16,
         key: KEY_RIGHT
     },
-
     ButtonSprite {
         file: "l",
         spriteId: L,
@@ -76,13 +75,12 @@ ButtonSprite buttonSprites[] = {
     ButtonSprite {
         file: "r",
         spriteId: R,
-        x: 0, 
-        y: 0,
+        x: 192, 
+        y: 23,
         width: 32,
         height: 16,
         key: KEY_R
     },
-
     ButtonSprite {
         file: "a",
         spriteId: A,
@@ -119,22 +117,21 @@ ButtonSprite buttonSprites[] = {
         height: 16,
         key: KEY_Y
     },
-
     ButtonSprite {
         file: "start",
         spriteId: START,
-        x: 0, 
-        y: 0,
-        width: 32,
+        x: 176, 
+        y: 136,
+        width: 16,
         height: 16,
         key: KEY_START
     },
     ButtonSprite {
         file: "select",
         spriteId: SELECT,
-        x: 0, 
-        y: 0,
-        width: 32,
+        x: 176, 
+        y: 152,
+        width: 16,
         height: 16,
         key: KEY_SELECT
     }
@@ -162,11 +159,11 @@ int main(int argc, char **argv)
     NF_InitSpriteBuffers();
     NF_InitSpriteSys(1);
 
-    // Create the buttons background
+    // Load and create the background
     NF_LoadTiledBg("background", "background", 256, 256);
     NF_CreateTiledBg(1, 0, "background");
 
-    // Load the Palette
+    // Load the Palette and transfer it to VRAM
     NF_LoadSpritePal("up", PALLETTE_ID);
     NF_VramSpritePal(1, PALLETTE_ID, PALLETTE_ID);
 
