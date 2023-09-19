@@ -190,8 +190,9 @@ int main(int argc, char **argv)
             NF_ShowSprite(1, buttonSprite.spriteId, buttons & buttonSprite.key);
         }
 
-        // Wait for the screen refresh
+        // Update the sprites on the screen
         NF_SpriteOamSet(1);
+        // Wait for the screen refresh
         swiWaitForVBlank();
         oamUpdate(&oamMain);
         oamUpdate(&oamSub);
@@ -201,3 +202,4 @@ int main(int argc, char **argv)
     // supports it.
     return 0;
 }
+
