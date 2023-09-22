@@ -65,6 +65,16 @@ open buttons.nds
 ```
 
 
+## Making your own programs
+
+Clone the `template` folder and rename it to the name of your program.
+Hack away!
+
+```bash
+cp -r template my-program
+```
+
+
 
 ## Graphics
 The demos use the [PICO-8 palette](https://www.lexaloffle.com/pico-8.php).
