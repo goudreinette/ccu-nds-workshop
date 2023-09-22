@@ -4,7 +4,7 @@
 ![CCU Nintendo DS Workshop](./images/cover.png)
     
 This workshop is part of the [Permacomputing program](https://creativecodingutrecht.nl/en/calendar/permacomputing-workshop-nintendods) at [Creative Coding Utrecht](https://creativecodingutrecht.nl/).
-
+Nintendo DS programs are written in C or C++, but this workshop doesn't use a lot of advanced programming concepts.
 
 ## Installation
 
