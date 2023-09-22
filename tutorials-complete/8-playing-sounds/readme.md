@@ -1,4 +1,6 @@
 # 8. Playing sounds
 
-Learn to use the `maxmod` library to play sounds.
+Learn how to convert audio files to the correct format and play them. 
+
+
 
