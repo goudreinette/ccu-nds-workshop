@@ -11,13 +11,13 @@ Nintendo DS programs are written in C or C++, but this workshop doesn't use a lo
 Requirements:
 - A computer with Linux, Mac or Windows
 - An IDE, this repository has been set up to work best with [Visual Studio Code](https://code.visualstudio.com/) but any text editor will do
-- [devkitPro](https://devkitpro.org/wiki/Getting_Started) with `nds-dev` package installed
+- [devkitPro](https://devkitpro.org/wiki/Getting_Started) with `nds-dev` package installed. Installer for:
     - [Mac and Linux](https://github.com/devkitPro/pacman/releases/tag/v6.0.2)
     - [Windows](https://github.com/devkitPro/installer/releases/tag/v3.0.3)
 - [Aseprite](https://www.aseprite.org/) to edit sprites and backgrounds
 - [DeSmuME](https://github.com/TASEmulators/desmume/releases) or another NDS emulator
     - For Linux look [here](https://www.maketecheasier.com/desmume-play-nintendo-ds-games-linux/)
-- [nflib](https://github.com/knightfox75/nds_nflib) library. 
+- [NightFox’s Lib](https://github.com/knightfox75/nds_nflib) to make working with graphics easier.
 
 
 
