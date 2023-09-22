@@ -1,7 +1,6 @@
 #include <nds.h> 
 #include <stdio.h>
-#include <nf_lib.h> // Include NFlib, which we will use to work with sprites
-#include <filesystem.h> // Include filesystem, needed to load files from NitroFS
+// Only two basic libraries are needed for this example
 
 
 

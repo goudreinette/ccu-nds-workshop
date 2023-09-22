@@ -1,10 +1,9 @@
-#include <nds.h>
-#include <stdio.h>
-#include <filesystem.h>
+#include <nds.h> // Include the NDS header file.
+#include <stdio.h> // Include the standard input/output header file.
 
 
 
-
+// The main function of the program.
 int main()
 {
     // Initialize the console to a default state for prototyping.
@@ -29,9 +28,5 @@ int main()
         // Increment the frame counter
         frame++;
     }
-
-    // If this is reached, the program will return to the loader if the loader
-    // supports it.
-    return 0;
 }
 
