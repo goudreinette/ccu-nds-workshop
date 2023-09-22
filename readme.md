@@ -1,7 +1,9 @@
 # CCU Nintendo DS Workshop
 
 
-![CCU Nintendo DS Workshop](./cover.png)
+![CCU Nintendo DS Workshop](./images/cover.png)
+    
+This workshop is part of the [Permacomputing program](https://creativecodingutrecht.nl/en/calendar/permacomputing-workshop-nintendods) at [Creative Coding Utrecht](https://creativecodingutrecht.nl/).
 
 
 ## Installation
@@ -15,7 +17,7 @@ Requirements:
 - [Aseprite](https://www.aseprite.org/) to edit sprites and backgrounds
 - [DeSmuME](https://github.com/TASEmulators/desmume/releases) or another NDS emulator
     - For Linux look [here](https://www.maketecheasier.com/desmume-play-nintendo-ds-games-linux/)
-- [nflib](https://github.com/knightfox75/nds_nflib) library
+- [nflib](https://github.com/knightfox75/nds_nflib) library. 
 
 
 
@@ -33,6 +35,8 @@ export DEVKITPRO=/opt/devkitpro
 git clone https://github.com/goudreinette/ccu-nds-workshop
 ```
 
+Open it in your editor of choice.
+
 
 ## Building a program
 Go to the folder of the program you want to build.
@@ -41,21 +45,20 @@ Go to the folder of the program you want to build.
 cd demos/buttons
 ```
 
-
-### Convert images to the format used by the DS
+Convert images to the format used by the DS.
 Do this before compiling the program.
 
 ```bash
 sh ./convert-assets.sh
 ```
 
-### Compiling 
+Compile the program.
 
 ```bash
 make
 ```
 
-### Running the program on the emulator
+To run the program in the emulator, open it from the Finder / Explorer or run it from the command line (Mac example).
 
 ```bash
 open buttons.nds
@@ -64,4 +67,7 @@ open buttons.nds
 
 
 ## Graphics
-We're using the PICO-8 color palette.
+The demos use the [PICO-8 palette]().
+When creating sprites and backgrounds, make sure that the color mode in Aseprite is set to Indexed Color.
+
+![Aseprite image mode](./images/aseprite-color-mode.png)
