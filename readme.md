@@ -67,7 +67,7 @@ open buttons.nds
 
 ## Making your own programs
 
-Clone the `template` folder and rename it to the name of your program.
+Clone the `template` folder and rename it.
 Hack away!
 
 ```bash
