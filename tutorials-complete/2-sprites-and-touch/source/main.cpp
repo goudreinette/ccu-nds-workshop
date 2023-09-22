@@ -52,6 +52,9 @@ int main()
         // Read the touch screen
         touchPosition touch;
         touchRead(&touch);
+
+        // Print the touch position
+        printf("\x1b[1;1HTouch: %04i, %04i", touch.px, touch.py);
         
         // If the user touched the screen...
         if (touch.px != 0 && touch.py != 0)  {
