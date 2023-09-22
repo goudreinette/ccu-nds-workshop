@@ -67,7 +67,7 @@ open buttons.nds
 
 
 ## Graphics
-The demos use the [PICO-8 palette]().
+The demos use the [PICO-8 palette](https://www.lexaloffle.com/pico-8.php).
 When creating sprites and backgrounds, make sure that the color mode in Aseprite is set to Indexed Color.
 
 ![Aseprite image mode](./images/aseprite-color-mode.png)
