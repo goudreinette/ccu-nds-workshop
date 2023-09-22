@@ -1,5 +1,5 @@
 #include <nds.h>
-#include <stdio.h> // NOLINT(modernize-deprecated-headers)
+#include <stdio.h>
 #include <string>
 #include <vector>
 #include <filesystem.h>
@@ -13,18 +13,22 @@ int main()
     NF_Set2D(0, 5);
     NF_Set2D(1, 5);
 
+    // Show a loading message
     consoleDemoInit();
-    printf("\n Loading artificial... \n\n");
+    printf("\n Loading... \n\n");
     swiWaitForVBlank();
 
     // Initialize NitroFS and set it as the root folder of the filesystem
     nitroFSInit(nullptr);
     NF_SetRootFolder("NITROFS");
 
-
+    // Initialize library to load files from the filesystem to create tiled BGs.
     NF_InitTiledBgBuffers();
+
+    // Initialize the tiled BG engine of the top screen
     NF_InitTiledBgSys(0);
 
+    // Load the background graphics from the filesystem into RAM
     NF_LoadTiledBg("red", "red", 256, 256);
     NF_LoadTiledBg("blue", "blue", 256, 256);
     NF_LoadTiledBg("green", "green", 256, 256);
@@ -42,6 +46,8 @@ int main()
         u16 keys = guitarGripKeysDown();
         u16 buttons = keysDown();
 
+        // If a button is pressed:
+        // Print the pressed button and change the background of the top screen.
         if (keys & GUITARGRIP_GREEN || buttons & KEY_UP) {
             NF_CreateTiledBg(0, 0, "green");
             printf("\n GREEN pressed!");
