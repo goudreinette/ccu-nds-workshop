@@ -38,7 +38,7 @@ git clone https://github.com/goudreinette/ccu-nds-workshop
 Open it in your editor of choice.
 
 
-## Building a program
+## Compiling a program
 Go to the folder of the program you want to build.
 
 ```bash
