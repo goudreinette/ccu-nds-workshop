@@ -139,7 +139,7 @@ ButtonSprite buttonSprites[] = {
 
 
 
-int main(int argc, char **argv)
+int main()
 {
     // Initialize 2D engine in both screens and use mode 5
     NF_Set2D(0, 5);

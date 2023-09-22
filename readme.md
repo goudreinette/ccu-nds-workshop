@@ -23,6 +23,12 @@ export DEVKITPRO=/opt/devkitpro
 ```
 
 
+## Clone the repository somewhere in your computer
+
+```bash
+git clone 
+```
+
 
 ## Building a program
 Go to the folder of the program you want to build.
