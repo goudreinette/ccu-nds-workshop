@@ -62,14 +62,12 @@ int main(int argc, char **argv)
     // Create the sprites
     NF_CreateSprite(1, fireSparks.spriteId, fireSparks.spriteId, PALLETTE_ID, fireSparks.x, fireSparks.y);
     
+    // Keep track of the current animation frame
     int fire_frame = 0;
     int fire_frame_t = 0;
 
     while (true)
     {
-        scanKeys();
-        u16 buttons = keysHeld();
-
         fire_frame_t++; // Slow down 4 times
         if (fire_frame_t % 4 == 0) {
             fire_frame = (fire_frame + 1) % 19; // 19 frames
@@ -78,7 +76,7 @@ int main(int argc, char **argv)
         // Print "frame number x of 19" on the bottom screen
         printf("\x1b[1;1Hframe number %d of 19    ", fire_frame);
 
-        // Turn the button sprites on or off when you press them
+        // Update the sprite frame
         NF_SpriteFrame(1, FireSparksID, fire_frame);
       
         // Update the sprites on the screen
