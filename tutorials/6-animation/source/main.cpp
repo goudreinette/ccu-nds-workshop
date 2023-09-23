@@ -1,1 +1,0 @@
-// Tutorial: 6 - Sprite animation

@@ -1,4 +1,4 @@
-# 6. Animation
+# 5. Animation
 
 
 Shows correct (vertical) spritesheet format, how to load it in aseprite, 
