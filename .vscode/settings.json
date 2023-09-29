@@ -1,5 +1,11 @@
 {
     "files.associations": {
         "vector": "cpp"
+    },
+    "terminal.integrated.defaultProfile.windows": "MSYS2",
+    "terminal.integrated.profiles.windows": {
+        "MSYS2": {
+            "path": "C:\\msys64\\usr\\bin\\bash.exe",
+        }
     }
 }
