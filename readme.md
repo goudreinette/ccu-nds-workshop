@@ -6,9 +6,10 @@
 This workshop is part of the [Permacomputing program](https://creativecodingutrecht.nl/en/calendar/permacomputing-workshop-nintendods) at [Creative Coding Utrecht](https://creativecodingutrecht.nl/).
 Nintendo DS programs are written in C or C++, but this workshop doesn't use a lot of advanced programming concepts.
 
+
 ## Installation
 
-Requirements:
+**Requirements**:
 - A computer with Linux, Mac or Windows
 - An IDE, this repository has been set up to work best with [Visual Studio Code](https://code.visualstudio.com/) but any text editor will do
 - [devkitPro](https://devkitpro.org/wiki/Getting_Started) with `nds-dev` package installed. Installer for:
@@ -20,13 +21,13 @@ Requirements:
 - [NightFox’s Lib](https://github.com/knightfox75/nds_nflib) to make working with graphics easier.
 
 
+### Follow the instructions for your operating system:
+- [Installation on Mac and Linux](./installation-mac-linux.md)
+- [Installation on Windows](./installation-windows.md)
 
 
-### (Mac/Linux) Add these lines to your `.zshrc` or `.bashrc` file 
-```zsh
-export DEVKITARM=/opt/devkitpro/devkitARM
-export DEVKITPRO=/opt/devkitpro
-```
+If you want intellisense on your own projects that you copied from the template, copy the .vscode folder into your project.
+
 
 
 ## Clone the repository somewhere in your computer
