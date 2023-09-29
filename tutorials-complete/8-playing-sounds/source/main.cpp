@@ -13,20 +13,6 @@ int main()
     nitroFSInit(NULL);
     NF_SetRootFolder("NITROFS");
 
-    NF_Set2D(0, 0); // Set 2D mode
-
-    NF_InitBitmapBgSys(0, 1);
-    
-    NF_Init16bitsBgBuffers(); // Initialize background buffers
-    NF_InitAffineBgSys(0); // Initialize background system
-
-
-    NF_Load16bitsBg("background", 0); // Load background
-
-
-    NF_CreateAffineBg(0, 3, "background", true); // Create background layer
-
-
     // Initialize DS audio hardware. 
     // Should be called prior to attempting sound playback
     soundEnable();
@@ -36,7 +22,6 @@ int main()
 
     // Load audio files from NitroFS
     NF_LoadRawSound("sfx/vine-boom", 0, 22050, 0);
-    NF_LoadRawSound("sfx/sample", 1, 11025, 0);
 
     while (1)
     {
@@ -46,14 +31,9 @@ int main()
         touchPosition touch;
         touchRead(&touch);
 
-
-         if (newpress & KEY_TOUCH) {
-            if (touch.px > SCREEN_WIDTH / 2) {
-                NF_PlayRawSound(0, 127, 127, false, 0);
-            } else {
-                NF_PlayRawSound(1, 127, 127, false, 0);
-            }
-         }
+        if (newpress & KEY_TOUCH) {
+            NF_PlayRawSound(0, 127, 127, false, 0);
+        }
 
         // Wait for the screen refresh
         swiWaitForVBlank();
