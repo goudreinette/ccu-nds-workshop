@@ -1,9 +1,9 @@
 #!/bin/sh
 
 
-# for background in assets/backgrounds/*.png; do
-#     grit $background -ftb -fh! -gT000000 -gt -gB8 -mR8 -mLs
-# done
+for background in assets/backgrounds/*.png; do
+    grit $background -ftb -fh! -gb -gB16
+done
 
 for sprite in assets/sprites/*.png; do
     grit $sprite -ftb -fh! -gT000000 -gt -gB8 -m!

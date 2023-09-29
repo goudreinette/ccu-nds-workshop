@@ -37,11 +37,11 @@ int main(int argc, char **argv)
     NF_Init3dSpriteSys();
 
     // Load the Palette and transfer it to VRAM
-    NF_LoadSpritePal("fire-sparks", PALLETTE_ID);
+    NF_LoadSpritePal("cat-space", PALLETTE_ID);
 
 
     // Load the button sprites
-    NF_LoadSpriteGfx("fire-sparks", SPRITE_ID, 64, 64);
+    NF_LoadSpriteGfx("cat-space", SPRITE_ID, 64, 64);
     // Transfer our sprite to VRAM
     NF_Vram3dSpriteGfx(SPRITE_ID, SPRITE_ID, true);
     NF_Vram3dSpritePal(SPRITE_ID, SPRITE_ID);
@@ -61,16 +61,11 @@ int main(int argc, char **argv)
         scanKeys();
         u16 buttons = keysHeld();
 
-        fire_frame_t++; // Slow down 4 times
-        if (fire_frame_t % 2 == 0) {
-            fire_frame = (fire_frame + 1) % 19; // 19 frames
-
-            // Update the frame of the sprite
-            NF_Set3dSpriteFrame(SPRITE_ID, fire_frame);
-        }
+        fire_frame++;
+        NF_Set3dSpriteFrame(SPRITE_ID, fire_frame / 5 % 8);
 
         // Print "frame number x of 19" on the bottom screen
-        printf("\x1b[1;1Hframe number %d of 19    ", fire_frame);
+        printf("\x1b[1;1Hframe number %d of 8    ", fire_frame);
 
          // Draw all 3D sprites
         NF_Draw3dSprites();

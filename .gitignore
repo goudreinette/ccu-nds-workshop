@@ -2,5 +2,4 @@
 
 *.nds
 *.elf
-nitrofiles/
 build/

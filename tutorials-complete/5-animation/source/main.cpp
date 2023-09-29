@@ -23,12 +23,12 @@ struct FireSparks {
 
 
 FireSparks fireSparks = {
-    file: "fire-sparks",
+    file: "cat-space",
     spriteId: FireSparksID,
     x: 0,
     y: 0,
-    width: 32,
-    height: 32
+    width: 64,
+    height: 64
 };
 
 
@@ -51,7 +51,7 @@ int main(int argc, char **argv)
     NF_InitSpriteSys(1);
 
     // Load the Palette and transfer it to VRAM
-    NF_LoadSpritePal("fire-sparks", PALLETTE_ID);
+    NF_LoadSpritePal("cat-space", PALLETTE_ID);
     NF_VramSpritePal(1, PALLETTE_ID, PALLETTE_ID);
 
 
@@ -64,20 +64,16 @@ int main(int argc, char **argv)
     
     // Keep track of the current animation frame
     int fire_frame = 0;
-    int fire_frame_t = 0;
 
     while (true)
     {
-        fire_frame_t++; // Slow down 4 times
-        if (fire_frame_t % 4 == 0) {
-            fire_frame = (fire_frame + 1) % 19; // 19 frames
-        }
+        fire_frame++;
 
         // Print "frame number x of 19" on the bottom screen
-        printf("\x1b[1;1Hframe number %d of 19    ", fire_frame);
+        printf("\x1b[1;1Hframe number %d of 8    ", fire_frame);
 
         // Update the sprite frame
-        NF_SpriteFrame(1, FireSparksID, fire_frame);
+        NF_SpriteFrame(1, FireSparksID, fire_frame / 10 % 8);
       
         // Update the sprites on the screen
         NF_SpriteOamSet(1);
