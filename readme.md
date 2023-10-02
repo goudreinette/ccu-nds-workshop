@@ -28,7 +28,7 @@ Nintendo DS programs are written in C or C++, but this workshop doesn't use a lo
 
 If you want intellisense on your own projects that you copied from the template, copy the .vscode folder into your project.
 
-
+- Bonus: Install C/Cpp language features
 
 ## Clone the repository somewhere in your computer
 
