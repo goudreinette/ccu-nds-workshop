@@ -1,1 +1,8 @@
-// Tutorial: 2 - Drawing Sprites
+// Template
+#include <nds.h>
+#include <nf_lib.h>
+
+
+int main() {
+    
+}
