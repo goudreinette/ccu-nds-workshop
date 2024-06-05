@@ -1,0 +1,63 @@
+{
+    "env": {
+        
+    },
+
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/devkitpro/libnds/include/**",
+                "/opt/devkitpro/nflib/include/**",
+                "/opt/devkitpro/devkitARM/include/**",
+                "/opt/devkitpro/devkitARM/arm-none-eabi/include/**"
+            ],
+            "defines": [
+                "ARM9"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/opt/devkitpro/devkitARM/bin/arm-none-eabi-gcc",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}\\**",
+                "C:\\devkitPro\\libnds\\include\\**",
+                "C:\\devkitPro\\libctru\\include\\**",
+                "C:\\devkitPro\\devkitARM\\include\\**",
+                "C:\\devkitPro\\devkitARM\\arm-none-eabi\\include\\**"
+            ],                
+            "defines": [
+                "ARM9"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/opt/devkitpro/devkitARM/bin/arm-none-eabi-gcc",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        },
+
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/devkitpro/libnds/include/**",
+                "/opt/devkitpro/nflib/include/**",
+                "/opt/devkitpro/devkitARM/include/**",
+                "/opt/devkitpro/devkitARM/arm-none-eabi/include/**"
+            ],
+            "defines": [
+                "ARM9"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/opt/devkitpro/devkitARM/bin/arm-none-eabi-gcc",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+
+
+    "version": 4
+}
