@@ -1,0 +1,11 @@
+{
+	"image": "skylyrac/blocksds:slim-latest",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools",
+				"Tyriar.luna-paint"
+			]
+		}
+	}
+}
