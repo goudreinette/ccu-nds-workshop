@@ -1,0 +1,25 @@
+{
+    "env": {
+        
+    },
+
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/blocksds/**"
+            ],
+            "defines": [
+                "ARM9"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "/opt/wonderful/toolchain/gcc-arm-none-eabi/bin/arm-none-eabi-gcc",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+
+
+    "version": 4
+}

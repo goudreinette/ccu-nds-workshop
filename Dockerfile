@@ -1,27 +1,9 @@
 FROM devkitpro/devkitarm:latest
-# Install the xz-utils package
 
-# RUN wget https://apt.devkitpro.org/install-devkitpro-pacman
-# RUN chmod +x ./install-devkitpro-pacman
-# RUN ./install-devkitpro-pacman
+# Install NFLib
+# RUN cd libraries && git clone https://github.com/knightfox75/nds_nflib.git && mv nds_nflib nflib && ln -sT nflib /opt/devkitpro/nflib && cd nflib && make -f Makefile.dkp
 
-# ensure apt is set up to work with https sources
-RUN apt-get install -y apt-transport-https
+RUN git clone https://github.com/knightfox75/nds_nflib.git && mv nds_nflib /opt/devkitpro/nflib && cd /opt/devkitpro/nflib && make -f Makefile.dkp
 
-# Store devkitPro gpg key locally if we don't have it already
-RUN mkdir -p /usr/local/share/keyring/
-RUN wget -O /usr/local/share/keyring/devkitpro-pub.gpg https://apt.devkitpro.org/devkitpro-pub.gpg
-
-# Add the devkitPro apt repository if we don't have it set up already
-RUN  echo "deb [signed-by=/usr/local/share/keyring/devkitpro-pub.gpg] https://apt.devkitpro.org stable main" > /etc/apt/sources.list.d/devkitpro.list
-
-# Finally install devkitPro pacman
-RUN apt-get update
-RUN apt-get install -y devkitpro-pacman
-
-
-RUN dkp-pacman -S --needed --noconfirm nds-dev  
-
-
-ENV DEVKITPPC=${DEVKITPRO}/devkitPPC
-ENV DEVKITARM=/opt/devkitpro/devkitARM
+# Install nitro engine 
+RUN git clone https://github.com/AntonioND/nitro-engine.git && mv nitro-engine /opt/devkitpro/nitro-engine && cd /opt/devkitpro/nitro-engine && make dkp -j`nproc`
