@@ -8,7 +8,8 @@
 		"vscode": {
 			"extensions": [
 				"ms-vscode.cpptools",
-				"Tyriar.luna-paint"
+				"Tyriar.luna-paint",
+				"softpack6ix.nds-emulator-vscode"
 			]
 		}
 	}
